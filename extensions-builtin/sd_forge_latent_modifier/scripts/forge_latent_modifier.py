@@ -25,7 +25,7 @@ class LatentModifierForForge(scripts.Script):
             sharpness_method = gr.Radio(label='Sharpness Method',
                                         choices=['anisotropic', 'joint-anisotropic', 'gaussian', 'cas'],
                                         value='anisotropic')
-            tonemap_multiplier = gr.Slider(label='Tonemap Multiplier', minimum=0.0, maximum=100.0, step=0.01, value=0.0)
+            tonemap_multiplier = gr.Slider(label='Tonemap Multiplier', minimum=0.0, maximum=500.0, step=0.01, value=0.0)
             tonemap_method = gr.Radio(label='Tonemap Method',
                                       choices=['reinhard', 'reinhard_perchannel', 'arctan', 'quantile', 'gated',
                                                'cfg-mimic', 'spatial-norm'], value='reinhard')
