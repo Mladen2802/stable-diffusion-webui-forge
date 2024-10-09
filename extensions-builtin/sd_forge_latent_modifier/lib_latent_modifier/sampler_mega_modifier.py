@@ -874,7 +874,7 @@ class ModelSamplerLatentMegaModifier:
                               "sharpness_method": (["anisotropic", "joint-anisotropic", "gaussian", "cas"], ),
                               "tonemap_multiplier": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 100.0, "step": 0.01}),
                               "tonemap_method": (["reinhard", "reinhard_perchannel", "arctan", "quantile", "gated", "cfg-mimic", "spatial-norm"], ),
-                              "tonemap_percentile": ("FLOAT", {"default": 100.0, "min": 0.0, "max": 100.0, "step": 0.005}),
+                              "tonemap_percentile": ("FLOAT", {"default": 100.0, "min": 0.0, "max": 500.0, "step": 0.005}),
                               "contrast_multiplier": ("FLOAT", {"default": 0.0, "min": -100.0, "max": 100.0, "step": 0.1}),
                               "combat_method": (["subtract", "subtract_channels", "subtract_median", "sharpen"], ),
                               "combat_cfg_drift": ("FLOAT", {"default": 0.0, "min": -10.0, "max": 10.0, "step": 0.01}),
